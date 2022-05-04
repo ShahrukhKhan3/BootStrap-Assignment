@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <title>Bootstrap</title>
+
+  <style>
+    body {
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+    .section1-1,
+
+    .section1-2,
+
+    .section1-main,
+
+    .section1-footer {
+
+      padding: 25px;
+
+    }
+
+    .section1-1 {
+
+      text-align: center;
+
+    }
+
+    .section1-2 {
+
+      background-color: #f7f7f7;
+
+      font-weight: bolder;
+
+    }
+
+    .section1-2 h4 {
+
+      margin: 5px;
+
+    }
+
+    .key-section1-2 {
+
+      color: #888484;
+
+      float: right;
+
+    }
+
+    .section1-main {
+
+      background-color: #b9dcfa;
+
+      padding: 50px;
+
+    }
+
+    p {
+
+      font-size: 16px;
+
+    }
+
+    .section1-main h2 {
+
+      font-weight: bolder;
+
+    }
+
+    .section1-def {
+
+      color: #195279;
+
+    }
+
+    .section1-footer {
+
+      background-color: #5088c1;
+
+      padding-top: 0;
+
+    }
+
+    .section1-footer .row {
+
+      padding: 15px 0px;
+
+    }
+
+    .section1-footer p {
+
+      line-height: 25px;
+
+      letter-spacing: 2px;
+
+      padding-top: 30px;
+
+    }
+
+    .main-container {
+
+      width: 60%;
+
+      margin: auto;
+
+    }
+
+    .my-row {
+
+      width: 100%;
+
+      display: flex;
+
+    }
+
+    .check {
+
+      width: 50%;
+
+      padding-right: 10px;
+
+    }
+
+    .check2 {
+
+      width: 50%;
+
+      padding-left: 10px;
+
+    }
+
+    .my-row1 {
+
+      width: 100%;
+
+      display: flex;
+
+    }
+
+    .main1 {
+
+      flex: 1;
+
+    }
+
+    .main2 {
+
+      flex: 1;
+
+    }
+
+    .right {
+
+      display: flex;
+
+      justify-content: center;
+
+    }
+
+    .section2 {
+
+      background-color: #d8dccf;
+
+    }
+
+    .section2-img {
+
+      padding-top: 30px;
+
+    }
+
+    .section2-detail {
+
+      padding: 20px;
+
+    }
+
+    .section2-detail h1 {
+
+      font-weight: bolder;
+
+      letter-spacing: 8px;
+
+      font-size: 40px;
+
+    }
+
+    .section2-detail p {
+
+      font-size: 14px;
+
+    }
+
+    .section2-detail h4 {
+
+      letter-spacing: 2px;
+
+    }
+
+    .section2-info {
+
+      padding: 20px 50px;
+
+    }
+
+    .section2-info img {
+
+      padding-right: 20px;
+
+    }
+
+    .section2-info img {
+
+      float: left;
+
+    }
+
+    .p-img {
+
+      display: flex;
+
+      margin-bottom: 20px;
+
+    }
+
+    .img-div {
+
+      width: 15%;
+
+    }
+
+    .para-div {
+
+      width: 85%;
+
+    }
+
+    .para-div p {
+
+      line-height: 30px;
+
+    }
+
+    .section2-main {
+
+      padding: 20px 70px;
+
+    }
+
+    .section2-main p {
+
+      line-height: 40px;
+
+    }
+
+    .section2-p {
+
+      padding-top: 105px;
+
+    }
+
+    .section2-p p {
+
+      font-weight: bold;
+
+      letter-spacing: 2px;
+
+    }
+
+    .links-row {
+
+      padding: 20px;
+
+    }
+
+    .section3-top-row div {
+
+      padding: 0;
+
+    }
+
+    .section3-top img {
+
+      width: 100%;
+
+    }
+
+    #activity3 {
+
+      border: 10px solid #0066CC;
+
+    }
+
+    .menu h3 {
+
+      letter-spacing: 1px;
+
+      font-weight: bolder;
+
+    }
+
+    .section3-mid .row {
+
+      padding: 20px 0px;
+
+    }
+
+    .section3-p {
+
+      letter-spacing: 5px;
+
+      font-size: 40px;
+
+    }
+
+    .section3-p2 {
+
+      letter-spacing: 6px;
+
+    }
+
+    .section3-end {
+
+      border-top: 10px solid #0066CC;
+
+    }
+
+    .img-check {
+
+      border: 5px solid #0066CC;
+
+      width: 68.5%;
+
+    }
+
+    .img-check2 {
+
+      border: 5px solid #0066CC;
+
+      width: 69%;
+
+      margin-left: auto;
+
+    }
+
+    .img1 {
+
+      border-right: 5px solid #0066CC;
+
+    }
+
+    .img2 {
+
+      border-left: 5px solid #0066CC;
+
+    }
+
+    @media (max-width: 685px) {
+
+      .my-row1 {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+      }
+
+      .main1,
+
+      .main2 {
+
+        display: flex;
+
+        justify-content: center;
+
+      }
+
+      .row2 {
+
+        flex-direction: column-reverse;
+
+      }
+
+      .section2-main {
+
+        padding: 0px;
+
+      }
+
+      .section2-p {
+
+        padding: 20px;
+
+      }
+
+    }
+
+    @media (max-width: 990px) {
+
+      .section2-p p {
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+
+      }
+
+      .section2-p {
+
+        padding-top: 20px;
+
+      }
+
+      .img1,
+
+      .img2 {
+
+        border: 0px;
+
+      }
+
+    }
+
+    @media (max-width: 425px) {
+
+      .section2-main img,
+
+      .section2-img img {
+
+        width: 100%;
+
+      }
+
+      .links-row div {
+
+        display: flex;
+
+        flex-direction: column;
+
+      }
+
+      .links-row div img {
+
+        width: 20%;
+
+        margin: auto;
+
+      }
+
+      section2-main {
+
+        padding-left: 0;
+
+        padding-right: 0;
+
+      }
+
+      .section2-p p {
+
+        padding-left: 30px;
+
+        padding-right: 30px;
+
+      }
+
+    }
+
+    @media (max-width: 350px) {
+
+      .section3-mid h3,
+
+      .section3-mid p {
+
+        letter-spacing: 0px;
+
+      }
+
+    }
+
+    @media (max-width: 550px) {
+
+      .p-img {
+
+        display: flex;
+
+        justify-content: space-evenly;
+
+      }
+
+      .img-div {
+
+        width: 30%;
+
+      }
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <ul class="nav nav-tabs">
+
+      <li class="active">
+
+        <a data-toggle="tab" href="#activity1">Activity 1</a>
+
+      </li>
+
+      <li><a data-toggle="tab" href="#activity2">Activity 2</a></li>
+
+      <li><a data-toggle="tab" href="#activity3">Activity 3</a></li>
+
+    </ul>
+
+
+
+    <div class="tab-content">
+
+      <div id="activity1" class="tab-pane fade in active">
+
+        <div class="section1-1">
+
+          <h1>CHICAGO</h1>
+
+          <h4 style="color: #c5c5c5">CITY GUIDE</h4>
+
+        </div>
+
+        <div class="section1-2">
+
+          <div class="row" style="width: 70%; margin: auto">
+
+            <div class="col-md-6">
+
+              <div class="my-row">
+
+                <div class="check">
+
+                  <h4><span class="key-section1-2">State</span></h4>
+
+                </div>
+
+                <div class="check2">
+
+                  <h4><span class="key-section1-22">Illinois</span></h4>
+
+                </div>
+
+              </div>
+
+              <div class="my-row">
+
+                <div class="check">
+
+                  <h4><span class="key-section1-2">Population</span></h4>
+
+                </div>
+
+                <div class="check2">
+
+                  <h4><span class="key-section1-22">2,722,398</span></h4>
+
+                </div>
+
+              </div>
+
+              <div class="my-row">
+
+                <div class="check">
+
+                  <h4><span class="key-section1-2">Area</span></h4>
+
+                </div>
+
+                <div class="check2">
+
+                  <h4><span class="key-section1-22">234.0 sq. mi</span></h4>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="my-row">
+
+                <div class="check">
+
+                  <h4><span class="key-section1-2">Time Zone</span></h4>
+
+                </div>
+
+                <div class="check2">
+
+                  <h4>
+
+                    <span class="key-section1-22">Central (UTC-6)</span>
+
+                  </h4>
+
+                </div>
+
+              </div>
+
+              <div class="my-row">
+
+                <div class="check">
+
+                  <h4><span class="key-section1-2">Climate</span></h4>
+
+                </div>
+
+                <div class="check2">
+
+                  <h4>
+
+                    <span class="key-section1-22">Humid Continental</span>
+
+                  </h4>
+
+                </div>
+
+              </div>
+
+              <div class="my-row">
+
+                <div class="check">
+
+                  <h4><span class="key-section1-2">Mayor</span></h4>
+
+                </div>
+
+                <div class="check2">
+
+                  <h4><span class="key-section1-22">Rahm Emanuel</span></h4>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="section1-main">
+
+          <div class="row">
+
+            <div class="col-md-12">
+
+              <h1 style="
+
+                    text-align: center;
+
+                    color: #3d6c99;
+
+                    font-weight: bolder;
+
+                    margin-top: 0;
+
+                  ">
+
+                TOP REASONS TO VISIT <br />
+
+                THE WINDY CITY
+
+              </h1>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-12">
+
+              <p style="text-align: center">
+
+                Alive with eclectic music, fine art, and stunning
+
+                architecture, Chicago is a place not only city-lovers dream
+
+                of, but also where nature lovers can find a bit of sanctuary
+
+                amidst a bustling metropolis.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-6">
+
+              <h2>Architecture</h2>
+
+              <p class="section1-def">
+
+                Chicago's architecture is one of the most stunning in the
+
+                world. Some landmarks you shouldn't miss are the Sears Tower,
+
+                John Hancock Center, and Cloud Gate.
+
+              </p>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <h2>Beaches</h2>
+
+              <p class="section1-def">
+
+                Think that Chicago is just for urban-dwellers? Think again.
+
+                Chicago has 26 miles of shoreline, 26 beaches, and an
+
+                18.5-mile bike path along Lake Michigan.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-6">
+
+              <h2>Food</h2>
+
+              <p class="section1-def">
+
+                There are over 4,700 restaurents in Chicago. The city is home
+
+                to some of the world's most elite chefs at the forefront of
+
+                cutting-edge cuisine.
+
+              </p>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <h2>Green Spaces</h2>
+
+              <p class="section1-def">
+
+                There are over 500 gardens and parks to explore in Chicago.
+
+                One of this is Millennium Park, where you will find the iconic
+
+                Cloud Gate metal sculpture.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-6">
+
+              <h2>The Arts</h2>
+
+              <p class="section1-def">
+
+                Chicago is home to the finest art galleries. The Art institute
+
+                of Chicago has more than 300,000 works. Tripdavisor hails it
+
+                as the world's #1 museum.
+
+              </p>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <h2>Live music venues</h2>
+
+              <p class="section1-def">
+
+                The city is in love with jazz and blues, as well as music
+
+                festivals and concerts of all kinds. If you're lucky, catch a
+
+                show by the Chicago Symphony Orchestra.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="section1-img">
+
+          <img style="width: 100%" class="img-responsive" src="./images/chicago_city.JPG" alt="Chicago City" />
+
+        </div>
+
+        <div class="section1-footer">
+
+          <div class="row">
+
+            <div class="col-md-12">
+
+              <h1 style="text-align: center; color: white; font-weight: bolder">
+
+                FUN FACTS ABOUT CHICAGO
+
+              </h1>
+
+            </div>
+
+          </div>
+
+          <div class="my-row1">
+
+            <div class="main1 right">
+
+              <p>
+
+                An average of 35 million visitors and tourists flock to
+
+                Chicago every year.
+
+              </p>
+
+            </div>
+
+            <div class="main2">
+
+              <img class="img-responsive" src="./images/plane.JPG" alt="Place Image" />
+
+            </div>
+
+          </div>
+
+          <div class="my-row1 row2">
+
+            <div class="main1 right">
+
+              <img class="img-responsive" src="./Checago.JPG" alt="Chicago States" height="200px" width="200px" />
+
+            </div>
+
+            <div class="main2">
+
+              <p>
+
+                4 States are visible from the top of the Willis Tower:
+
+                Indiana, Illinois, Michigan, and Wisconsin.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="my-row1">
+
+            <div class="main1 right">
+
+              <p>
+
+                One of the largest collections of Impressionist paintings is
+
+                found at the Art Institute of Chicago.
+
+              </p>
+
+            </div>
+
+            <div class="main2">
+
+              <img class="img-responsive" src="./images/painting.JPG" alt="Painting" />
+
+            </div>
+
+          </div>
+
+          <div class="my-row1 row2">
+
+            <div class="main1 right">
+
+              <img class="img-responsive" src="./images/chicago_board.JPG" alt="Chicago Board" />
+
+            </div>
+
+            <div class="main2">
+
+              <p class="p-left">
+
+                At 23.5 miles, Chicago's Western Avenue is the world's longest
+
+                continuous street.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="activity2" class="tab-pane fade section2">
+
+        <div class="container-fluid section2-img text-center">
+
+          <img src="./images/girl.JPG" alt="Girl" />
+
+        </div>
+
+        <div class="container-fluid section2-detail text-center">
+
+          <h1>LAURYN HOLDEN</h1>
+
+          <h4 style="font-weight: bold;">YOUNGEST CEO OF MARX WORLD WIDE</h4>
+
+          <div class="info-para" style="width: 70%; margin: auto">
+
+            <div style="border: 3px solid #aa2a6d; margin-bottom: 10px"></div>
+
+            <p style="font-weight: bold; letter-spacing: 1px">
+
+              Lauryn born 1986 in an accomplished economist, enterpreneur and
+
+              CEO of Marx Worldwide, a global courier delivery service company
+
+              headquatered in New York.
+
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="container-fluid section2-info">
+
+          <div class="row">
+
+            <div class="col-md-6 p-img">
+
+              <div class="img-div">
+
+                <img class="img-responsive" src="./images/loc.jpg" alt="Location" />
+
+              </div>
+
+              <div class="para-div">
+
+                <p>
+
+                  Lives in New York with her husband Frank with their 3 kids.
+
+                  Rocco, Walter and Ricci
+
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6 p-img">
+
+              <div class="img-div">
+
+                <img class="img-responsive" src="./images/IMG-20160921-WA0018.jpg" alt="Star" />
+
+              </div>
+
+              <div class="para-div">
+
+                <p>
+
+                  Named one of the Envy index, 25 Under 25, Vanity Fair, 2010
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-6 p-img">
+
+              <div class="img-div">
+
+                <img class="img-responsive" src="./images/IMG-20160921-WA0020.jpg" alt="Heart" />
+
+              </div>
+
+              <div class="para-div">
+
+                <p>Happily married Frank Holden since 2011</p>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6 p-img">
+
+              <div class="img-div">
+
+                <img class="img-responsive" src="./images/IMG-20160921-WA0012.jpg" alt="Image" />
+
+              </div>
+
+              <div class="para-div">
+
+                <p>
+
+                  Graduated Valendictorian of her class at Harvard, batch 2008
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-6 p-img">
+
+              <div class="img-div">
+
+                <img class="img-responsive" src="./images/IMG-20160921-WA0019.jpg" alt=Image"">
+
+              </div>
+
+              <div class="para-div">
+
+                <p>
+
+                  Caitlin Doveur. "Awesome, Twisted and Beautiful": A Q&A with
+
+                  Lauryn Holden
+
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6 p-img">
+
+              <div class="img-div">
+
+                <img class="img-responsive" src="./images/IMG-20160921-WA0014.jpg" alt="Image" />
+
+              </div>
+
+              <div class="para-div">
+
+                <p>
+
+                  She believes that "A girl should be two things: who and what
+
+                  she wants."
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="container-fluid section2-main">
+
+          <div class="row">
+
+            <div class="col-md-12 text-center">
+
+              <h1 style="font-weight: bolder">MAJOR MILESTONES</h1>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-5 text-center">
+
+              <img src="./images/port.JPG" alt="Port Image" />
+
+            </div>
+
+            <div class="col-md-7 section2-p">
+
+              <p>
+
+                Marx Worldwide became the biggest driver of sustainability in
+
+                the industry, with its commitment to spend $500 million on
+
+                sustainability efforts.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-7 section2-p">
+
+              <p>
+
+                She started a comprehensive housing program for tenured
+
+                employees which became an innovative model for other employee
+
+                housing programs.
+
+              </p>
+
+            </div>
+
+            <div class="col-md-5 text-center">
+
+              <img src="./images/house.JPG" alt="House Image" />
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-5 text-center">
+
+              <img src="./images/waterpump.jpg" alt="Water Pump" />
+
+            </div>
+
+            <div class="col-md-7 section2-p">
+
+              <p>
+
+                She started the Clean Water Initiative in Kenya, Uganda &
+
+                Sierra Leone to repair many of the broken well pumps in the
+
+                area.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="row links-row">
+
+            <div class="col-md-12 text-center">
+
+              <span style="font-weight: bold; font-size: 16px; letter-spacing: 1px">Follow her day to day at</span>
+
+              <img src="./images/IMG-20160921-WA0016.jpg" alt="LinkedIn" />
+
+              <img src="./images/IMG-20160921-WA0021.jpg" alt="Facebook" />
+
+              <img src="./images/IMG-20160921-WA0017.jpg" alt="Gmail" />
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="activity3" class="tab-pane fade">
+
+        <div class="container-fluid section3-top">
+
+          <div class="row section3-top-row">
+
+            <div class="col-md-6">
+
+              <img class="img-responsive" src="./images/caketopleft.JPG" alt="Image">
+
+              <div class="img-check"></div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <img class="img-responsive" src="./images/caketopright.JPG" alt="Image">
+
+              <div class="img-check2"></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="container-fluid section3-mid text-center">
+
+          <div class="row">
+
+            <div class="col-md-12">
+
+              <h3 style="letter-spacing: 2px; font-weight: bolder">PORTO ALEXANDRIA</h3>
+
+              <p class="section3-p2">ISLAND CLUB VILLAS</p>
+
+            </div>
+
+          </div>
+
+          <div class="row" style="padding: 20px 0px;">
+
+            <div class="col-md-12">
+
+              <p class="section3-p">BREAKFAST SETS</p>
+
+              <p>ALL MEALS SERVED WITH BREWED COFFEE & FRUIT JUICE</p>
+
+            </div>
+
+          </div>
+
+          <div class="row menu">
+
+            <div class="col-md-3">
+
+              <h3>COUNTRY STYLE</h3>
+
+              <p>4 pieces hot cake</p>
+
+              <p>butter and maple syrup</p>
+
+              <p>marmalade</p>
+
+            </div>
+
+            <div class="col-md-3">
+
+              <h3>AMERICAN</h3>
+
+              <p>sliced toasted bread</p>
+
+              <p>ham, bacon, corned beef</p>
+
+              <p>fried egg or scrambled egg</p>
+
+            </div>
+
+            <div class="col-md-3">
+
+              <h3>CONTINENTAL</h3>
+
+              <p>sliced toasted bread</p>
+
+              <p>butter and jam,</p>
+
+              <p>Fresh fruits</p>
+
+            </div>
+
+            <div class="col-md-3">
+
+              <h3>ENGLISH</h3>
+
+              <p>sliced toasted bread</p>
+
+              <p>ham, bacon, beans</p>
+
+              <p>Hash browns</p>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-12">
+
+              <p>DAIL ZERO FOR ORDERS</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="container-fluid section3-end section3-top">
+
+          <div class="row section3-top-row">
+
+            <div class="col-md-6">
+
+              <img class="img-responsive img1" src="./images/img3.jpg" alt="Image">
+
+            </div>
+
+            <div class="col-md-6">
+
+              <img class="img-responsive img2" src="./images/img4.jpg" alt="Image">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
